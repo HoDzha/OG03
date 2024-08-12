@@ -42,14 +42,14 @@ while running:
                 target_y = random.randint(0, SCREEN_HEIGHT - target_height)
                 hit_count += 1
                 color = (random.randint(0, 255), random.randint(0, 255), random.randint(0, 255))
-                if target_x < 0:
+                if target_x < 0: # Увеличиваем скорость по оси Y
                     target_speed_x -= 0.1
                 else:
                     target_speed_x += 0.1
-                if target_speed_y < 0:
+                if target_speed_y < 0: # Увеличиваем скорость по оси Y
                     target_speed_y -= 0.1
                 else:
-                    target_speed_y += 0.1  # Увеличиваем скорость по оси X
+                    target_speed_y += 0.1
 
 
     # Перемещение мишени
